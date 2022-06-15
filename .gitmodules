@@ -1,0 +1,4 @@
+[submodule "src/bcf-zephyr"]
+	path = src/bcf-zephyr
+	url = git@github.com:harshilbhatt2001/zephyr-jadonk.git
+	branch = bcf-sdk-3.1.0-rebase
