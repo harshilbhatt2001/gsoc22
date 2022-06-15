@@ -3,6 +3,7 @@ image: debian:bullseye
 build:
   stage: build
   before_script:
+    - git submodule update --init --recursive
     - ./setup.sh
   script:
     - ./build.sh
