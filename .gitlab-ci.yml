@@ -1,0 +1,17 @@
+image: debian:bullseye
+
+build:
+  stage: build
+  before_script:
+    - ./setup.sh
+  script:
+    - ./build.sh
+  artifacts:
+    paths:
+      - mybinary
+
+# run tests using the binary built before
+test:
+  stage: test
+  script:
+    - ./test.sh
