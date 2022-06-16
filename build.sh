@@ -5,7 +5,7 @@ export PATH=/opt/source/bcf-zephyr/zephyr/scripts:/usr/local/sbin:/usr/local/bin
 echo "Installing zephyr"
 cd /opt/source/
 echo "west init -m <repo> --mr <tag> bcf-zephyr"
-west init -m https://github.com/harshilbhatt2001/zephyr-jadonk.git --mr f1aa25c58c27392b20a3a8a8eb2f4e245abf04a4 bcf-zephyr
+west init -m https://github.com/harshilbhatt2001/zephyr-jadonk.git --mr bcf-sdk-3-1-0-rebase bcf-zephyr
 
 cd /opt/source/bcf-zephyr/
 echo "west update"
