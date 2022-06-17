@@ -17,3 +17,13 @@ test:
   stage: test
   script:
     - ./test.sh
+
+pages:
+  stage: deploy
+  script:
+  - echo 'Nothing to do...'
+  artifacts:
+    paths:
+    - public
+  only:
+  - main
