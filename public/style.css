@@ -22,4 +22,6 @@ body {
   color: #ffffff;
 }
 
-
+p {
+  margin: 0 0 1.15em;
+}
