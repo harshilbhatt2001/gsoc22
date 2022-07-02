@@ -16,73 +16,79 @@
   </div>
 
   <h1>Weekly Progress Report: Greybus for Zephyr</h1>
-  
+
   <p>
     Hi, this is a weekly blog for my GSoC 2022 project
     <a href="https://elinux.org/BeagleBoard/GSoC/2022_Proposal/GreybusforZephyrUpdates">Greybus for Zephyr Updates</a>.
     My mentors for this project are Jason Kridner, Vaishnav Achath, Deepak Khatri and Tim Orlington.
     This thread will be updated weekly.
   </p>
-  
+
   <div class="week_updates">
-  <h2>Week 1</h2>
-  <h4>Accomplishments</h4>
-  <p>
-  <ul>
-    <li>Build Zephyr applications for BeagleConnect nodes on the Gateway device.</li>
-    <li>Fixes for the updated bcf-sdk</li>
-    <li>Setup connection between the native POSIX target and host</li>
-  </ul>
-  </p>
+    <h2>Week 1</h2>
+    <h4>Accomplishments</h4>
+    <p>
+    <ul>
+      <li>Build Zephyr applications for BeagleConnect nodes on the Gateway device.</li>
+      <li>Fixes for the updated bcf-sdk <a href="https://github.com/jadonk/zephyr/pull/17">[Pull #17]</a></li>
+      <li>Setup connection between the native POSIX target and host</li>
+    </ul>
+    </p>
 
-  <h4>Blockers</h4>
-  <p>
-  <ul>
-    <li><a href="https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/issues/2">Greybus cannot bind I2C device</a></li>
-    <li><a
-        href="https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/issues/3">https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/issues/3</a>
-    </li>
-  </ul>
-  </p>
+    <h4>Blockers</h4>
+    <p>
+    <ul>
+      <li><a href="https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/issues/2">Greybus cannot bind I2C device</a>
+      </li>
+      <li><a
+          href="https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/issues/3">https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/issues/3</a>
+      </li>
+    </ul>
+    </p>
 
-  <h4>Upcoming Targets</h4>
-  <p>
-  <ul>
-    <li>Finish the introduction video</li>
-    <li>Establish a TCP connection between the native POSIX target and host</li>
-  </ul>
-  </p>
-</div>
+    <h4>Upcoming Targets</h4>
+    <p>
+    <ul>
+      <li>Finish the introduction video</li>
+      <li>Establish a TCP connection between the native POSIX target and host</li>
+    </ul>
+    </p>
+  </div>
 
-<div class="week_updates">
-  <h2>Week 2</h2>
-  <h4>Accomplishments</h4>
-  <p>
-  <ul>
-    <li>Finished the introduction slides and scripts</li>
-    <li>Patched the issue causing stack smashing on the native_POSIX target </li>
-    <li>Setup a greybus application on the native_POSIX target communicating via UART</li>
-  </ul>
-  </p>
+  <div class="week_updates">
+    <h2>Week 2</h2>
+    <h4>Accomplishments</h4>
+    <p>
+    <ul>
+      <li>Finished the introduction slides and scripts</li>
+      <li>Patched the issue causing stack smashing on the native_POSIX target <a
+          href="https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/commit/9fd1f60da38f0f3476428232cf90043b96abd64e">[Commit
+          9fd1f60d]</a></li>
+      <li>Setup a greybus application on the native_POSIX target communicating via UART <a
+          href="https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/commit/34fdf30596ed7325dd53aedea7f8e11fd03645e5">[Commit
+          34fdf305]</a> </li>
+    </ul>
+    </p>
 
-  <h4>Blockers</h4>
-  <p>
-  <ul>
-    <li><a href="https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/issues/2">Greybus cannot bind I2C device</a></li>
-    <li><a href="https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/issues/3">A kernel panic happens if a network
-        interface connected to the POSIX target is setup.</a>
-    </li>
-  </ul>
-  </p>
+    <h4>Blockers</h4>
+    <p>
+    <ul>
+      <li><a href="https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/issues/2">Greybus cannot bind I2C device</a>
+      </li>
+      <li><a href="https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/issues/3">A kernel panic happens if a network
+          interface connected to the POSIX target is setup.</a>
+      </li>
+    </ul>
+    </p>
 
-  <h4>Upcoming Targets</h4>
-  <p>
-  <ul>
-    <li>Interface PWM with zephyr from nuttx sources</li>
-    <li>Establish a TCP connection between the native POSIX target and host</li>
-  </ul>
-  </p>
-</div>
+    <h4>Upcoming Targets</h4>
+    <p>
+    <ul>
+      <li>Interface PWM with zephyr from nuttx sources</li>
+      <li>Establish a TCP connection between the native POSIX target and host</li>
+    </ul>
+    </p>
+  </div>
 
 </body>
 
