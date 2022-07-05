@@ -12,6 +12,63 @@
             This thread will be updated weekly
         </description>
         <language>en-us</language>
+        <item>
+            <title>Week 3 Updates</title>
+            <pubDate>Mon, 4 July 2022</pubDate>
+            <link>https://gsoc.beagleboard.io/greybus-for-zephyr/index.html</link>
+            <description>
+                <div class="week_updates">
+                    <h2>Week 3</h2>
+                    <h4>Accomplishments</h4>
+                    <p>
+                        <ul>
+                            <li>
+                                Finished the introduction video
+                                <a href="https://youtu.be/GN82Yiq_kRg">YouTube</a>
+                            </li>
+                            <li>
+                                Fix for demo in BeagleConnect documentation
+                                <a href="https://github.com/jadonk/beagleconnect/pull/93">[PR
+                          #93]</a>
+                            </li>
+                            <li>
+                                Fix CI to build an test greybus applications
+                                <a href="">[Commit 775e85db]</a>
+                            </li>
+                            <li>
+                                Interface PWM from nuttx sources
+                                <a href="https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/tree/pwm-wip">[Branch pwm-wip]</a>
+                            </li>
+                        </ul>
+                    </p>
+
+                    <h4>Blockers</h4>
+                    <p>
+                        <ul>
+                            <li>
+                                <a href="https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/issues/2">Greybus cannot bind I2C device</a>
+                            </li>
+                            <li>
+                                <a href="https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/issues/3">A kernel panic happens if a network
+                          interface connected to the POSIX target is setup.</a>
+                            </li>
+                            <li>
+                                <a href="https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/pipelines/370">Cannot build greybus on CI</a>
+                            </li>
+                        </ul>
+                    </p>
+
+                    <h4>Upcoming Targets</h4>
+                    <p>
+                        <ul>
+                            <li>Test PWM over greybus</li>
+                            <li>Improve the testbench</li>
+                            <li>Interface PWM with zephyr from nuttx sources</li>
+                        </ul>
+                    </p>
+                </div>
+            </description>
+        </item>
 
         <item>
             <title>Week 2 Updates</title>
