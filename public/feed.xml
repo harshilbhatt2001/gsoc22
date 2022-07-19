@@ -13,6 +13,46 @@
         </description>
         <language>en-us</language>
         <item>
+            <title>Week 5 Updates</title>
+            <pubDate>Mon, 18 July 2022</pubDate>
+            <link>https://gsoc.beagleboard.io/greybus-for-zephyr/index.html</link>
+            <description>
+                <div class="week_updates">
+                    <h2>Week 5</h2>
+                    <h4>Accomplishments</h4>
+                    <p>
+                        <ul>
+                            <li>Fix CI, again...</li>
+                            <li>Started developing a host side testbench to generate greybus message instead of gbridge</li>
+                            <li>
+                                Complete port of UART from nuttx sources
+                                <a href="https://git.beagleboard.org/gsoc/greybus/greybus-for-zephyr/-/tree/uart-wip">[Branch uart-wip]</a>
+                            </li>
+                        </ul>
+                    </p>
+
+                    <h4>Blockers</h4>
+                    <p>
+                        <ul>
+                            <li>
+                                <a href="https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/issues/5">
+                        UART and PWM firmware cause USAGE FAULTS on zephyr and occasionally hang the host</a>
+                            </li>
+                            <li>The "userspace gbridge" does not connect to the POSIX target</li>
+                        </ul>
+                    </p>
+
+                    <h4>Upcoming Targets</h4>
+                    <p>
+                        <ul>
+                            <li>Test PWM and UART peripherals over greybus</li>
+                            <li>Connect to the POSIX target with a userspace testbench</li>
+                        </ul>
+                    </p>
+                </div>
+            </description>
+        </item>
+        <item>
             <title>Week 4 Updates</title>
             <pubDate>Mon, 11 July 2022</pubDate>
             <link>https://gsoc.beagleboard.io/greybus-for-zephyr/index.html</link>
