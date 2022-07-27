@@ -177,7 +177,7 @@
     <ul>
       <li>
         <a href="https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/issues/5">
-        UART and PWM firmware cause USAGE FAULTS on zephyr and occasionally hang the host</a>
+          UART and PWM firmware cause USAGE FAULTS on zephyr and occasionally hang the host</a>
       </li>
       <li>The "userspace gbridge" does not connect to the POSIX target</li>
     </ul>
@@ -192,6 +192,43 @@
     </p>
   </div>
 
+  <div class="week_updates">
+    <h2>Week 6</h2>
+    <h4>Accomplishments</h4>
+    <p>
+    <ul>
+      <li>Completed beagleconnect documentation for docs.beagleboard.io <a
+          href="https://git.beagleboard.org/docs/docs.beagleboard.io/-/merge_requests/14">[Merge #14]</a>
+      </li>
+      <li>I thought an incorrect devicetree overlay was causing <a
+          href="https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/issues/5"> Issue #5</a>, as the error is caused by
+        passing a pointer to a non-static local variable to a state machine which changed the value at that memory
+        location later on. However, this does not seem to fix the issue.</li>
+      <li>Greybus core messages are being sent to the POSIX target</li>
+    </ul>
+    </p>
+
+    <h4>Blockers</h4>
+    <p>
+    <ul>
+      <li><a href="https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/issues/5">
+          This issue now shows up even when PWM or UART are not configured.</a> I am a little lost on how to debug this
+        issue.
+      </li>
+      <li>POSIX target does not receive the messages over the pseudo-terminal. I am unsure about how the interfaces in gbridge work, upon figuring them out, I should be able to write
+        greybus messages to a pseudo-terminal </li>
+    </ul>
+    </p>
+
+    <h4>Upcoming Targets</h4>
+    <p>
+    <ul>
+      <li>Move the PWM and UART devices into the gb_bundle's private data</li>
+      <li>Get core greybus messages working on the testbench</li>
+    </ul>
+    </p>
+  </div>
+  
 </body>
 
 </html>
