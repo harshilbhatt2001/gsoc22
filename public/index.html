@@ -27,6 +27,8 @@
     This thread will be updated weekly.
   </p>
 
+  <img src="workspace.jpg" style="float:right;width:600px;height:400px;">
+
   <div class="week_updates">
     <h2>Week 1</h2>
     <h4>Accomplishments</h4>
@@ -215,7 +217,8 @@
           This issue now shows up even when PWM or UART are not configured.</a> I am a little lost on how to debug this
         issue.
       </li>
-      <li>POSIX target does not receive the messages over the pseudo-terminal. I am unsure about how the interfaces in gbridge work, upon figuring them out, I should be able to write
+      <li>POSIX target does not receive the messages over the pseudo-terminal. I am unsure about how the interfaces in
+        gbridge work, upon figuring them out, I should be able to write
         greybus messages to a pseudo-terminal </li>
     </ul>
     </p>
@@ -228,7 +231,42 @@
     </ul>
     </p>
   </div>
-  
+
+  <div class="week_updates">
+    <h2>Week 7</h2>
+    <h4>Accomplishments</h4>
+    <p>
+    <ul>
+      <li>Narrowed down the cause of the major blocker <a
+          href="https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/issues/5">[Issue #5]</a></li>
+    </ul>
+    </p>
+
+    <h4>Blockers</h4>
+    <p>
+    <ul>
+      <li><a href="https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/issues/5">
+          This issue now shows up even when PWM or UART are not configured.</a> This seems to have risen from the recent
+        rebase of zephyr to version 3.1.0. My understanding so far is that the zephyr target crashes when gbridge is run
+        on the host. The kernel panic on the host probably occurs because of the errors on the zephyr side of things.
+        The doubly-linked list seems to cause an imprecise bus error when initialized. This leads me to some sort of
+        regression in the transport-tcpip.c.
+      </li>
+      <li>POSIX target does not receive the messages over the pseudo-terminal. I am unsure about how the interfaces in
+        gbridge work, upon figuring them out, I should be able to write
+        greybus messages to a pseudo-terminal </li>
+    </ul>
+    </p>
+
+    <h4>Upcoming Targets</h4>
+    <p>
+    <ul>
+      <li>Thoroughly debug the transport-tcpip to figure out what has regressed</li>
+      <li>Get core greybus messages working on the testbench</li>
+    </ul>
+    </p>
+  </div>
+
 </body>
 
 </html>
