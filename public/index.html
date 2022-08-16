@@ -300,6 +300,37 @@
     </p>
   </div>
 
+  <div class="week_updates">
+    <h2>Week 9</h2>
+    <h4>Accomplishments</h4>
+    <p>
+    <ul>
+      <li>The latest zephyr update seemed to cause more issues than it fixed, so it was rolled back.</li>
+      <li>Debugging the bcf target resulted in more information. The sendMessage function in the transport-tcpip does
+        not return correctly.</li>
+    </ul>
+    </p>
+
+    <h4>Blockers</h4>
+    <p>
+    <ul>
+      <li>This issue still persists <a href="https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/issues/5">[Issue
+          #5]</a>. 
+      </li>
+      <li>Greybus message headers are read incorrectly on the testbench.</li>
+    </ul>
+    </p>
+
+    <h4>Upcoming Targets</h4>
+    <p>
+    <ul>
+      <li>Figure out why sendMessage does not return correctly.</li>
+      <li>Fix greybus message handling on the testbench.</li>
+      <li>Add peripheral support to the testbench.</li>
+    </ul>
+    </p>
+  </div>
+
 </body>
 
 </html>
