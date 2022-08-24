@@ -13,6 +13,47 @@
         </description>
         <language>en-us</language>
         <item>
+            <title>Week 10 Updates</title>
+            <pubDate>Mon, 24 August 2022</pubDate>
+            <link>https://gsoc.beagleboard.io/greybus-for-zephyr/index.html</link>
+            <description>
+                <div class="week_updates">
+                    <h2>Week 10</h2>
+                    <h4>Accomplishments</h4>
+                    <p>
+                        <ul>
+                            <li>Built a minimal example for the bcf target using tcp, which did not show errors I have been facing.</li>
+                            <li>Build a simple application to read and write data from the pty, which shows the same error as my testbench</li>
+                            <li>Analyze the greybus transaction between host and zephyr using tcpdump</li>
+                        </ul>
+                    </p>
+
+                    <h4>Blockers</h4>
+                    <p>
+                        <ul>
+                            <li>
+                                This issue still persists
+                                <a href="https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/issues/5">[Issue
+                          #5]</a>
+                                .
+                            </li>
+                            <li>Reading data from the pty throws errno 14</li>
+                        </ul>
+                    </p>
+
+                    <h4>Upcoming Targets</h4>
+                    <p>
+                        <ul>
+                            <li>Figure out why sendMessage does not return correctly.</li>
+                            <li>Fix greybus message handling on the testbench.</li>
+                            <li>Add peripheral support to the testbench.</li>
+                        </ul>
+                    </p>
+                </div>
+
+            </description>
+        </item>
+        <item>
             <title>Week 9 Updates</title>
             <pubDate>Mon, 15 August 2022</pubDate>
             <link>https://gsoc.beagleboard.io/greybus-for-zephyr/index.html</link>
