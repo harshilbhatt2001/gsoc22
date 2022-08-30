@@ -315,7 +315,7 @@
     <p>
     <ul>
       <li>This issue still persists <a href="https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/issues/5">[Issue
-          #5]</a>. 
+          #5]</a>.
       </li>
       <li>Greybus message headers are read incorrectly on the testbench.</li>
     </ul>
@@ -337,7 +337,8 @@
     <p>
     <ul>
       <li>Built a minimal example for the bcf target using tcp, which did not show errors I have been facing.</li>
-      <li>Build a simple application to read and write data from the pty, which shows the same error as my testbench</li>
+      <li>Build a simple application to read and write data from the pty, which shows the same error as my testbench
+      </li>
       <li>Analyze the greybus transaction between host and zephyr using tcpdump</li>
     </ul>
     </p>
@@ -346,7 +347,7 @@
     <p>
     <ul>
       <li>This issue still persists <a href="https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/issues/5">[Issue
-          #5]</a>. 
+          #5]</a>.
       </li>
       <li>Reading data from the pty throws errno 14</li>
     </ul>
@@ -358,6 +359,34 @@
       <li>Figure out why sendMessage does not return correctly.</li>
       <li>Fix greybus message handling on the testbench.</li>
       <li>Add peripheral support to the testbench.</li>
+    </ul>
+    </p>
+  </div>
+
+  <div class="week_updates">
+    <h2>Week 11</h2>
+    <h4>Accomplishments</h4>
+    <p>
+    <ul>
+      <li>Resolved <a href="https://git.beagleboard.org/gsoc/greybus-for-zephyr/-/issues/2">[Issue #2]</a></li>
+      <li>UART and PWM now do not crash zephyr</li>
+      <li>Fixed stack corruption of the net sample for a native posix target</li>
+    </ul>
+    </p>
+
+    <h4>Blockers</h4>
+    <p>
+    <ul>
+      <li>Zephyr does not support interrupt-driver UART for native posix</li>
+      <li>TCP on the native posix target causes a recursive spinlock</li>
+    </ul>
+    </p>
+
+    <h4>Upcoming Targets</h4>
+    <p>
+    <ul>
+      <li>Finish mapping greybus with zephyr API for UART and PWM.</li>
+      <li>Fix net sample for the zephyr posix target</li>
     </ul>
     </p>
   </div>
