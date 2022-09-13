@@ -13,6 +13,53 @@
         </description>
         <language>en-us</language>
         <item>
+            <title>Week 13 Updates</title>
+            <pubDate>Mon, 12 September 2022</pubDate>
+            <link>https://gsoc.beagleboard.io/greybus-for-zephyr/index.html</link>
+            <description>
+                <div class="week_updates">
+                    <h2>Week 13</h2>
+                    <h4>Accomplishments</h4>
+                    <p>
+                        <ul>
+                            <li>Mapping for UART platform completed</li>
+                            <li>Mapping for PWM platform completed</li>
+                            <li>Improved gbridge runtime visibility </li>
+                        </ul>
+                    </p>
+
+                    <h4>Blockers</h4>
+                    <p>
+                        <ul>
+                            <li>UART event loop halts for the native POSIX target on gbridge</li>
+                            <li>The devicetree for cc13xx has missing features, which prevents testing of PWM</li>
+                            <li>The host crashes when an attempt to update the UART configuration is made</li>
+                        </ul>
+                    </p>
+
+                    <h4>Upcoming Targets</h4>
+                    <p>
+                        <ul>
+                            <li>Figure out cause of UART crash on bcf</li>
+                            <li>Figure out why the event loop halts on the POSIX target</li>
+                        </ul>
+                    </p>
+                </div>
+
+            </description>
+        </item>
+        <item>
+            <title>Week 12 Updates</title>
+            <pubDate>Mon, 12 September 2022</pubDate>
+            <link>https://gsoc.beagleboard.io/greybus-for-zephyr/index.html</link>
+            <description>
+                <div class="week_updates">
+                    <h2>Week 12</h2>
+                    No major updates due to mid-sem exams.
+                </div>
+            </description>
+        </item>
+        <item>
             <title>Week 11 Updates</title>
             <pubDate>Mon, 28 August 2022</pubDate>
             <link>https://gsoc.beagleboard.io/greybus-for-zephyr/index.html</link>
