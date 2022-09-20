@@ -13,6 +13,37 @@
         </description>
         <language>en-us</language>
         <item>
+            <title>Week 14 Updates</title>
+            <pubDate>Mon, 19 September 2022</pubDate>
+            <link>https://gsoc.beagleboard.io/greybus-for-zephyr/index.html</link>
+            <description>
+                <div class="week_updates">
+                    <h2>Week 14</h2>
+                    <h4>Accomplishments</h4>
+                    <p>
+                        <ul>
+                            <li>Add pwm to the native POSIX board on Zephyr</li>
+                        </ul>
+                    </p>
+
+                    <h4>Blockers</h4>
+                    <p>
+                        <ul>
+                            <li>Device-tree error when trying to instantiate a pwm device on the POSIX board</li>
+                        </ul>
+                    </p>
+
+                    <h4>Upcoming Targets</h4>
+                    <p>
+                        <ul>
+                            <li>Complete pwm for the POSIX board</li>
+                            <li>Test greybus messages on pwm POSIX.</li>
+                        </ul>
+                    </p>
+                </div>
+            </description>
+        </item>
+        <item>
             <title>Week 13 Updates</title>
             <pubDate>Mon, 12 September 2022</pubDate>
             <link>https://gsoc.beagleboard.io/greybus-for-zephyr/index.html</link>
