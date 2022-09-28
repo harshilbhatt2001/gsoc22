@@ -251,3 +251,18 @@ No major updates due to mid-sem exams.
 
 * Complete pwm for the POSIX board
 * Test greybus messages on pwm POSIX.
+
+## Week 15
+
+#### Accomplishments
+
+* Documentation for PWM and UART
+
+#### Blockers
+
+* Device-tree error when trying to instantiate a pwm device on the POSIX board
+
+#### Upcoming Targets
+
+* Complete pwm for the POSIX board
+* Test greybus messages on pwm POSIX.
