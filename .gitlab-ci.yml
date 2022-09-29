@@ -25,6 +25,6 @@ pages:
   artifacts:
     paths:
     - public
-  only:
-  - blog
+  # only:
+  # - blog
 
