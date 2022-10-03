@@ -29,4 +29,9 @@ The following operations are supported by greybus
 * gb_uart_send_break
 
   Requests that the UART generate a break condition on its transmit line.
-  
+
+The above mentioned handlers have been ported to zephyr, and a mapping has been created between greybus and zephyr.
+A `phandle` is accepted by the greybus devicetree overlay, which then connects over a new CPORT..
+
+The UART port for greybus has been tested. Presently, `gb_uart_set_line_coding` crashes the linux host.
+This occurs when the host attempts to update the `uart` configuration on the node.

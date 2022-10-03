@@ -64,3 +64,10 @@ make
 ```bash
 ./gbridge -p /dev/pts/X
 ```
+
+
+## Native POSIX PWM
+
+This driver is currently under development [here](https://git.beagleboard.org/gsoc/greybus/zephyr/-/tree/pwm_posix_wip).
+This will take a `phandle-array` of gpios and add pwm output capabilities to them.  
+At the moment, build errors need to be fixed due to faulty initialization of the posix board.

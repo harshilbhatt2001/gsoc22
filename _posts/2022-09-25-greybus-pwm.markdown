@@ -50,3 +50,11 @@ The following operations are supported by greybus
   This function will parse the gb_pwm_enable_request to get specific generator
   number, and then calls PWM controller driver to stop the specific generator
   of pulse toggling.
+
+The above mentioned handlers have been ported to zephyr, and a mapping has been created between greybus and zephyr.
+A `phandle` is accepted by the greybus devicetree overlay, which then connects over a new CPORT..
+
+This has not been tested yet, primarily due to two reasons, 
+
+1. The `cc1352` devicetree in zephyr has missing features. For testing, we require either a PWM node or a timer node, drivers for whom are not currently supported in zephyr
+2. The native POSIX target provided by zephyr does not support PWM, this is currently being worked upon [[1]](https://git.beagleboard.org/gsoc/greybus/zephyr/-/tree/pwm_posix_wip).
