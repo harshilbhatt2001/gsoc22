@@ -1,18 +1,19 @@
 image: ruby:latest
 
-workflow:
-  rules:
-    - if: $CI_COMMIT_BRANCH
+variables:
+  JEKYLL_ENV: production
+  LC_ALL: C.UTF-8
+
+before_script:
+  - gem install bundler
+  - bundle install
 
 pages:
   stage: deploy
   script:
-    - gem install bundler
-    - bundle install
-    - bundle exec jekyll build -d public --verbose
+  - bundle exec jekyll build -d public
   artifacts:
     paths:
-      - public
+    - public
   rules:
-    - if: $CI_COMMIT_BRANCH == "blog"
-  environment: production
+    - if: $CI_COMMIT_REF_NAME == "blog"
