@@ -8,6 +8,7 @@ before_script:
   - gem install bundler
   - bundle update --bundler
   - bundle install
+  - mkdir .jekyll-cache _site
 
 pages:
   stage: deploy
