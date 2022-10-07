@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "Summary"
+date:   2022-10-08 00:15:14 +0530
+categories: jekyll update
+---
+
+This post will highlight the major goals, accomplishments, shortcomings and how the project evolved over the summer.
+
+## Goals
+
+1. Greybus message handling on the native Posix target.
+2. Interface PWM drivers from NuttX sources.
+3. Documentation for the PWM driver.
+4. Interface UART drivers from NuttX sources.
+5. Documentation for the UART driver.
+
+In the middle of the project, the goals were updated to incorporate a new userspace testbench which would generate greybus messages instead of `gbridge`.
+
+## Accomplishments
+
+1. Fixed the broken samples by rebasing Zephyr to v3.1.0 from v2.7.0 [[PR]](https://github.com/jadonk/zephyr/pull/17).
+2. Support Greybus message handling on the native POSIX board in zephyr [[PR]](https://github.com/jadonk/greybus-for-zephyr/pull/6).
+3. Add PWM to greybus on Zephyr [[PR]](https://github.com/jadonk/greybus-for-zephyr/pull/8).
+4. Add UART to greybus on Zephyr [[PR]](https://github.com/jadonk/greybus-for-zephyr/pull/7).
+5. Documentation for PWM, UART, and Greybus message transactions manually as well as with `gbridge` [here](https://harshilbhatt2001.github.io/gsoc22/).
+
+## Shortcomings
+
+1. PWM couuld not be tested due to two reason
+    * Zephyr does not completely support `cc1352` and lacks drivers for PWM.
+    * The native POSIX board does not emulate PWM. The custom driver has errors in the devicetree due to incorrect initialization.
+2. UART does not work as expected upon attempting to update the configuration (baud rate, parity), with the linux host crashing.
+3. The testbench does not work as expected, and results in permission errors when trying to communicate with the native POSIX application over a pseudo-terminal.
